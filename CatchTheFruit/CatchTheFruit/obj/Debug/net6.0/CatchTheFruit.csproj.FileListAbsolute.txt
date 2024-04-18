@@ -23,7 +23,11 @@ C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\obj\Debug\net6.0\refint\Catch
 C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\obj\Debug\net6.0\CatchTheFruit.pdb
 C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\obj\Debug\net6.0\CatchTheFruit.genruntimeconfig.cache
 C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\obj\Debug\net6.0\ref\CatchTheFruit.dll
-C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\ball.xnb
 C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\plate.xnb
 C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\File.xnb
 C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\bomb.xnb
+C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\apple.xnb
+C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\melon.xnb
+C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\orange.xnb
+C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\peach.xnb
+C:\Users\Danil\Desktop\CatchTheFruit\CatchTheFruit\bin\Debug\net6.0\Content\background.xnb

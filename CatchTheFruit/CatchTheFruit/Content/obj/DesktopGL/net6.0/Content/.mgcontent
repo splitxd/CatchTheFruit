@@ -4,12 +4,20 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/ball.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/apple.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/background.jpg</File>
     <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/bomb.png</File>
     <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/File.spritefont</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/melon.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/orange.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/peach.png</File>
     <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/plate.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

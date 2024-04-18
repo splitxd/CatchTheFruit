@@ -1,4 +1,0 @@
-Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/ball.png","C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/bin/DesktopGL/ball.xnb","TextureProcessor","Texture2DContent",8368,16469,0,137204
-"C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/File.spritefont","C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/bin/DesktopGL/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0,1113131
-"C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/plate.png","C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruit/Content/bin/DesktopGL/plate.xnb","TextureProcessor","Texture2DContent",2397000,7680085,0,4672255
