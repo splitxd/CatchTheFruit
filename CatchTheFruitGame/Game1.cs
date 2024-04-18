@@ -93,7 +93,7 @@ namespace CatchTheFruitGame
             fruitTextures.Add(orangeTexture);
             bombTexture = Content.Load<Texture2D>("bomb");
             plateTexture = Content.Load<Texture2D>("plate");
-            //font = Content.Load<SpriteFont>("File");
+            font = Content.Load<SpriteFont>("File");
 
         }
 
@@ -211,7 +211,7 @@ namespace CatchTheFruitGame
                 _spriteBatch.Draw(fruitPosition.Texture, ChangeSizeRect(fruitPosition.Position, fruitSize), Color.White);
             }
 
-           // _spriteBatch.DrawString(font, "Score: " + score.ToString(), new Vector2(10, 20), Color.White);
+            _spriteBatch.DrawString(font, "Score: " + score.ToString(), new Vector2(10, 20), Color.White);
 
             _spriteBatch.End();
 

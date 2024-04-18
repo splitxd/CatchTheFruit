@@ -4,15 +4,17 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Danil/Desktop/CatchTheFruitGame/CatchTheFruitGame/Content/apple.png</File>
-    <File>C:/Users/Danil/Desktop/CatchTheFruitGame/CatchTheFruitGame/Content/background.jpg</File>
-    <File>C:/Users/Danil/Desktop/CatchTheFruitGame/CatchTheFruitGame/Content/bomb.png</File>
-    <File>C:/Users/Danil/Desktop/CatchTheFruitGame/CatchTheFruitGame/Content/melon.png</File>
-    <File>C:/Users/Danil/Desktop/CatchTheFruitGame/CatchTheFruitGame/Content/orange.png</File>
-    <File>C:/Users/Danil/Desktop/CatchTheFruitGame/CatchTheFruitGame/Content/peach.png</File>
-    <File>C:/Users/Danil/Desktop/CatchTheFruitGame/CatchTheFruitGame/Content/plate.png</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/apple.png</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/background.jpg</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/bomb.png</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/File.spritefont</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/melon.png</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/orange.png</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/peach.png</File>
+    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/plate.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
