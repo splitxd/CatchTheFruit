@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/crunchSound_3.mp3</SourceFile>
+  <SourceTime>2024-04-24T18:30:04.0029903+05:00</SourceTime>
+  <DestFile>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/bin/DesktopGL/Content/crunchSound_3.xnb</DestFile>
+  <DestTime>2024-04-24T18:34:51.4349074+05:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2022-07-26T16:44:56+05:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2022-07-26T16:44:56+05:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/bin/DesktopGL/Content/crunchSound_3.ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>

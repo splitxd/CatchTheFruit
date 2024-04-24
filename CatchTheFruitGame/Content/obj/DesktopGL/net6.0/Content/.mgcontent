@@ -4,16 +4,30 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/apple.png</File>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/background.jpg</File>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/bomb.png</File>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/File.spritefont</File>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/melon.png</File>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/orange.png</File>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/peach.png</File>
-    <File>C:/Users/Danil/Desktop/dfdf/CatchTheFruit/CatchTheFruitGame/Content/plate.png</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/1000points.mp3</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/100points.mp3</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/10points.mp3</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/apple.png</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/background.jpg</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/bomb.png</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/bombSound.mp3</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/crunchSound_1.mp3</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/crunchSound_2.mp3</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/crunchSound_3.mp3</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/File.spritefont</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/melon.png</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/orange.png</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/peach.png</File>
+    <File>C:/Users/Danil/Desktop/Game/CatchTheFruit/CatchTheFruitGame/Content/plate.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

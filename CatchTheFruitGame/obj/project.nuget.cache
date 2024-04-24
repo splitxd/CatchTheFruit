@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "twns3AonCn6mzNL1/i5tGDBQ61SrO1P7utjHKHHIJO1jaVtVx5L3y1OL1uZcfjVt7Vj4DN9KJuXgHfMi99F6Jg==",
+  "dgSpecHash": "twFDDFLEGx3l9e6ByyQuK11YvZvbE2ElOwMTYt2oBlE4WFdpvjlcwQFhx/uWU3ZvJMjtVDMloV/W9LvAJ7UIZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Danil\\Desktop\\dfdf\\CatchTheFruit\\CatchTheFruitGame\\CatchTheFruitGame.csproj",
+  "projectFilePath": "C:\\Users\\Danil\\Desktop\\Game\\CatchTheFruit\\CatchTheFruitGame\\CatchTheFruitGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Danil\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
     "C:\\Users\\Danil\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
