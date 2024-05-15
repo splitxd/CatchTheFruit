@@ -4,21 +4,21 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Font/File.spritefont</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Img/apple.png</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Img/background.jpg</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Img/bomb.png</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Img/melon.png</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Img/orange.png</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Img/peach.png</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Img/plate.png</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Sounds/1000points.mp3</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Sounds/100points.mp3</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Sounds/10points.mp3</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Sounds/bombSound.mp3</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Sounds/crunchSound_1.mp3</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Sounds/crunchSound_2.mp3</File>
-    <File>C:/Users/Danil/Documents/GitHub/CatchTheFruit/CatchTheFruitGame/Content/Sounds/crunchSound_3.mp3</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Font/File.spritefont</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Img/apple.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Img/background.jpg</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Img/bomb.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Img/melon.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Img/orange.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Img/peach.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Img/plate.png</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Sounds/1000points.mp3</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Sounds/100points.mp3</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Sounds/10points.mp3</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Sounds/bombSound.mp3</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Sounds/crunchSound_1.mp3</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Sounds/crunchSound_2.mp3</File>
+    <File>C:/Users/Danil/Desktop/CatchTheFruit/CatchTheFruitGame/Content/Sounds/crunchSound_3.mp3</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework.Media;
+﻿using Microsoft.Xna.Framework.Audio;
 
 namespace CatchTheFruitGame
 {
@@ -9,25 +9,26 @@ namespace CatchTheFruitGame
         private static bool isFirstTen = true;
         private static bool isFirtstHundred = true;
         private static bool isFirstTousand = true;
-        private static Song thousenPoints;
-        private static Song hundretPoints;
-        private static Song tenPoints;
+        private static SoundEffect thousenPoints;
+        private static SoundEffect hundretPoints;
+        private static SoundEffect tenPoints;
         public  static int backRectWidth = 152;
         public  static int backRectHeight = 46;
 
-        public void LoadSounds(Song ThousenPoints, Song HundretPoints, Song TenPoints)
+        public void Initialize(SoundEffect ThousenPoints, SoundEffect HundretPoints, SoundEffect TenPoints)
         {
             thousenPoints = ThousenPoints;
             hundretPoints = HundretPoints;
             tenPoints = TenPoints;
         }
+
         public static void ScoreSounds(int score)
         {
             if (score % 1000 == 0 && score != 0)
             {
                 if (previous < score)
                 {
-                    MediaPlayer.Play(thousenPoints);
+                    thousenPoints.Play();
                     previous = score;
                 }
                 if (isFirstTousand)
@@ -41,7 +42,7 @@ namespace CatchTheFruitGame
             {
                 if (previous < score)
                 {
-                    MediaPlayer.Play(hundretPoints);
+                    hundretPoints.Play();
                     previous = score;
                 }
                 if (isFirtstHundred)
@@ -55,7 +56,7 @@ namespace CatchTheFruitGame
             {
                 if (previous < score)
                 {
-                    MediaPlayer.Play(tenPoints);
+                    tenPoints.Play();
                     previous = score;
                 }
                 if (isFirstTen)

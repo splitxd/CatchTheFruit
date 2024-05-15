@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 
 namespace CatchTheFruitGame
@@ -11,22 +11,22 @@ namespace CatchTheFruitGame
     internal class InteractionObjects
     {
         private TimeSpan elapsedTimeSinceLastFruit;
-        public int fruitSpawnTime = 1;
+        public static float fruitSpawnTime = 1;
         public static GraphicsDeviceManager _graphics;
 
-        static List<Texture2D> fruitTextures = new List<Texture2D>();
-        const float fruitSpeed = 200f;
+        static List<Texture2D> fruitTextures = new();
+        public static float fruitSpeed = 200f;
         public static int fruitSize = 64;
-        public static List<Object> objPositions = new List<Object>();
-        private static Plate _plate;
+        public static List<Object> objPositions = new();
+        public static Plate _plate;
 
-        static Random rnd = new Random();
+        static Random rnd = new();
         private static Texture2D bombTexture;
 
-        private static Song bombSound;
-        private static List<Song> crunchSounds;
+        private static SoundEffect bombSound;
+        private static List<SoundEffect> crunchSounds;
 
-        public void SoundsLoad(Song BombSound, List<Song> CrunchSounds)
+        public void SoundsLoad(SoundEffect BombSound, List<SoundEffect> CrunchSounds)
         {
             bombSound = BombSound;
             crunchSounds = CrunchSounds;
@@ -49,13 +49,15 @@ namespace CatchTheFruitGame
         public void Update(GameTime gameTime,Game1 game)
         {
             elapsedTimeSinceLastFruit += gameTime.ElapsedGameTime;
+            if (fruitSpeed <= 0)
+                game.Exit();
 
             if (elapsedTimeSinceLastFruit >= TimeSpan.FromSeconds(fruitSpawnTime))
             {
                 if (rnd.Next(0, 10) < 2)
-                    objectsAdd(objPositions, bombTexture);
+                    ObjectsAdd(objPositions, bombTexture);
                 else
-                    objectsAdd(objPositions, randomFruitTexture());
+                    ObjectsAdd(objPositions, RandomFruitTexture());
                 elapsedTimeSinceLastFruit = TimeSpan.Zero;
             }
 
@@ -84,20 +86,21 @@ namespace CatchTheFruitGame
             {
                 if (obj.Texture == bombTexture)
                 {
-                    MediaPlayer.Play(bombSound);
+                    bombSound.Play();
                     game.score--;
+                    Difficulty.DifficultDecrease();
                 }
                 else
                 {
-                    MediaPlayer.Play(crunchSounds[rnd.Next(0, crunchSounds.Count)]);
+                    (crunchSounds[rnd.Next(0, crunchSounds.Count)]).Play();
                     game.score++;
                 }
                 objPositions.RemoveAt(i);
             }
         }
-        public static List<Object> objectsAdd(List<Object> objects, Texture2D texture)
+        public static List<Object> ObjectsAdd(List<Object> objects, Texture2D texture)
         {
-            Object obj = new Object(texture, RandomObjSpawn());
+            Object obj = new(texture, RandomObjSpawn());
             objects.Add(obj);
             return objects;
         }
@@ -107,7 +110,7 @@ namespace CatchTheFruitGame
             return new Vector2(_graphics.PreferredBackBufferWidth / 2 - fruitSize / 2 + rnd.Next(-300, 300), -(int)fruitSize);
         }
 
-        public static Texture2D randomFruitTexture()
+        public static Texture2D RandomFruitTexture()
         {
             int randomIndex = rnd.Next(fruitTextures.Count);
             return fruitTextures[randomIndex];

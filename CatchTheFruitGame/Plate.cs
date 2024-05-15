@@ -8,8 +8,8 @@ namespace CatchTheFruitGame
         public Vector2 Position = Vector2.Zero;
         private int ScreenWidth;
         private int ScreenHeight;
-        public float Speed = 300f;
-        public float DefaultSpeed = 300f;
+        public static float Speed = 300f;
+        public static float DefaultSpeed = 300f;
         public int Size = 100;
 
 
@@ -20,8 +20,13 @@ namespace CatchTheFruitGame
             Position = new Vector2((screenWidth - Size) / 2, screenHeight - Size);
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, Game game)
         {
+            if ( Speed <= 0)
+                game.Exit();
+            {
+                
+            }
             var kstate = Keyboard.GetState();
             if (kstate.IsKeyDown(Keys.A) || kstate.IsKeyDown(Keys.Left))
             {

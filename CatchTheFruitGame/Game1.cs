@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
@@ -12,14 +13,14 @@ namespace CatchTheFruitGame
     public class Game1 : Game
     {
         //Звуки
-        static Song crunchSound_1;
-        static Song crunchSound_2;
-        static Song crunchSound_3;
-        static List<Song> crunchSounds = new List<Song>();
-        static Song tenPoints;
-        static Song hundretPoints;
-        static Song thousenPoints;
-        static Song bombSound;
+        static SoundEffect crunchSound_1;
+        static SoundEffect crunchSound_2;
+        static SoundEffect crunchSound_3;
+        static List<SoundEffect> crunchSounds = new();
+        static SoundEffect tenPoints;
+        static SoundEffect hundretPoints;
+        static SoundEffect thousenPoints;
+        static SoundEffect bombSound;
 
         //Текстуры
         Texture2D plateTexture;
@@ -35,10 +36,10 @@ namespace CatchTheFruitGame
         private static Plate _plate;
         private static InteractionObjects _interactionObjects;
         private static ScorePoints _scorePoints;
-
+        private static Difficulty _difficulty;
 
         //Фрукты
-        static List<Texture2D> fruitTextures = new List<Texture2D>();
+        static List<Texture2D> fruitTextures = new();
 
         //Очки
         public int score;
@@ -67,10 +68,12 @@ namespace CatchTheFruitGame
 
             _interactionObjects = new InteractionObjects();
             _plate = new Plate(_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight);
+            _difficulty = new Difficulty();
+
             _interactionObjects.Initialize(_plate, _graphics);
             _scorePoints = new ScorePoints();
 
-            crunchSounds = new List<Song>();
+            crunchSounds = new List<SoundEffect>();
             whiteTexture = new Texture2D(GraphicsDevice, 1, 1);
             whiteTexture.SetData(new[] { Color.White });
             score = 0;
@@ -92,20 +95,20 @@ namespace CatchTheFruitGame
             bombTexture = Content.Load<Texture2D>("Img/bomb");
             plateTexture = Content.Load<Texture2D>("Img/plate");
             font = Content.Load<SpriteFont>("Font/File");
-            bombSound = Content.Load<Song>("Sounds/bombSound");
-            crunchSound_1 = Content.Load<Song>("Sounds/crunchSound_1");
-            crunchSound_2 = Content.Load<Song>("Sounds/crunchSound_2");
-            crunchSound_3 = Content.Load<Song>("Sounds/crunchSound_3");
+            bombSound = Content.Load<SoundEffect>("Sounds/bombSound");
+            crunchSound_1 = Content.Load<SoundEffect>("Sounds/crunchSound_1");
+            crunchSound_2 = Content.Load<SoundEffect>("Sounds/crunchSound_2");
+            crunchSound_3 = Content.Load<SoundEffect>("Sounds/crunchSound_3");
             crunchSounds.Add(crunchSound_1);
             crunchSounds.Add(crunchSound_2);
             crunchSounds.Add(crunchSound_3);
-            tenPoints = Content.Load<Song>("Sounds/10points");
-            hundretPoints = Content.Load<Song>("Sounds/100points");
-            thousenPoints = Content.Load<Song>("Sounds/1000points");
+            tenPoints = Content.Load<SoundEffect>("Sounds/10points");
+            hundretPoints = Content.Load<SoundEffect>("Sounds/100points");
+            thousenPoints = Content.Load<SoundEffect>("Sounds/1000points");
 
             _interactionObjects.SoundsLoad(bombSound, crunchSounds);
             _interactionObjects.TexturesLoad(bombTexture, fruitTextures);
-            _scorePoints.LoadSounds(thousenPoints, hundretPoints,tenPoints);
+            _scorePoints.Initialize(thousenPoints, hundretPoints,tenPoints);
         }
 
         protected override void Update(GameTime gameTime)
@@ -113,8 +116,9 @@ namespace CatchTheFruitGame
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            _plate.Update(gameTime);
+            _plate.Update(gameTime,this);
             _interactionObjects.Update(gameTime,this);
+            _difficulty.Update(gameTime);
 
             ScorePoints.ScoreSounds(score);
 
